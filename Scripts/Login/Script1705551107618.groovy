@@ -21,33 +21,16 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://katalon-demo-cura.herokuapp.com/')
 
-WebUI.click(findTestObject('Object Repository/Page_CURA Healthcare Service/a_Make Appointment'))
-
-WebUI.setText(findTestObject('Object Repository/Page_CURA Healthcare Service/input_username'), 'John Doe')
-
-WebUI.setEncryptedText(findTestObject('Object Repository/Page_CURA Healthcare Service/input_password'), 'lqDUxSJqrJCiHnxLhRlGInkJst0ac4O4')
-
-WebUI.click(findTestObject('Object Repository/Page_CURA Healthcare Service/button_Login'))
-
 WebUI.setText(findTestObject('Object Repository/Page_CURA Healthcare Service/input_username'), 'John Doe')
 
 WebUI.setEncryptedText(findTestObject('Object Repository/Page_CURA Healthcare Service/input_password'), 'lqDUxSJqrJCiHnxLhRlGInkJst0ac4O4')
 
 WebUI.sendKeys(findTestObject('Object Repository/Page_CURA Healthcare Service/input_password'), Keys.chord(Keys.ENTER))
 
-WebUI.setText(findTestObject('Object Repository/Page_CURA Healthcare Service/input_username'), 'John Doe')
-
-WebUI.setEncryptedText(findTestObject('Object Repository/Page_CURA Healthcare Service/input_password'), 'lqDUxSJqrJAbtSQMJZmX0Dax+LIF6Vjj')
-
-WebUI.sendKeys(findTestObject('Object Repository/Page_CURA Healthcare Service/input_password'), Keys.chord(Keys.ENTER))
-
-WebUI.click(findTestObject('Object Repository/Page_CURA Healthcare Service/spandemo_username_label'))
+WebUI.verifyElementText(findTestObject('Object Repository/Page_CURA Healthcare Service/p_Login failed Please ensure the username a_eb55b5'), 
+    'Login failed! Please ensure the username and password are valid.')
 
 WebUI.setText(findTestObject('Object Repository/Page_CURA Healthcare Service/input_username'), 'John Doe')
-
-WebUI.setText(findTestObject('Object Repository/Page_CURA Healthcare Service/input_form-control'), 'ThisIsNotAPassword')
-
-WebUI.click(findTestObject('Object Repository/Page_CURA Healthcare Service/input_form-control'))
 
 WebUI.setEncryptedText(findTestObject('Object Repository/Page_CURA Healthcare Service/input_password'), 'g3/DOGG74jC3Flrr3yH+3D/yKbOqqUNM')
 
